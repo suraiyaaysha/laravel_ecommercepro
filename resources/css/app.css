@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Suraiya Custom CSS */
+input, select {
+    color: black;
+    width: 30%;
+}
+.form-group label {
+    display: block;
+}
+th {
+    /* background-color: gray; */
+    padding: 20px;
+}
+td>img, .custom-img {
+    height: 100px;
+    max-width: 100px;
+    margin: 15px auto;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+[type='file'] {
+    border: 1px solid white;
+    color: #000;
+    background-color: white;
+}
+/* Suraiya Custom CSS */

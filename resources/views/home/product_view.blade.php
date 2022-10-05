@@ -3,14 +3,11 @@
             <div class="row justify-content-center">
                <div class="col-md-6">
                   <div class="heading_container heading_center">
-                     <h2>
-                        Our <span>products</span>
-                     </h2>
                   </div>
 
                   {{-- Search Product form --}}
                   <div class="search-product-form">
-                     <form action="{{url('product_search')}}" method="GET">
+                     <form action="{{url('search_product')}}" method="GET">
                      @csrf
                         <input type="text" name="search" placeholder="Search for Something">
                         <button type="submit" class="btn btn-primary bg-primary">Search</button>
@@ -19,7 +16,7 @@
                   {{-- Search Product form --}}
                </div>
             </div>
-
+            
             <div class="row mb-4 mt-4 justify-content-center">
                <div class="col-sm-6 col-md-4 col-lg-4">                 
                   @if (session()->has('message'))
@@ -32,7 +29,6 @@
             </div>
 
             <div class="row">
-
                @foreach ($product as $item)
                <div class="col-sm-6 col-md-4 col-lg-4">
                   <div class="box">

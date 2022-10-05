@@ -89,3 +89,10 @@ Route::post('/add_reply', [HomeController::class,'add_reply']);
 
 // Product Search
 Route::get('/product_search', [HomeController::class,'product_search']);
+
+// Product Page
+Route::get('/products', [HomeController::class,'products']);
+
+
+// Search Product on product view page
+Route::get('/search_product', [HomeController::class,'search_product']);

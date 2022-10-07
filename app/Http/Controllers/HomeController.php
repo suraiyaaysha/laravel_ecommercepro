@@ -16,6 +16,8 @@ use Stripe;
 use App\Models\Comment;
 use App\Models\Reply;
 
+use RealRashid\SweetAlert\Facades\Alert;
+
 class HomeController extends Controller
 {
     public function index() {
@@ -92,7 +94,10 @@ class HomeController extends Controller
                     }
 
                 $cart->save();
-                return redirect()->back()->with('message', 'Product Added Successfully');;
+                Alert::success('Product Added successfully', 'We have added product to the cart');
+                // Alert::warning('Product Added successfully', 'We have added product to the cart');
+                // return redirect()->back()->with('message', 'Product Added Successfully');
+                return redirect()->back();
             }
             else {
                 $cart=new Cart();
@@ -114,7 +119,9 @@ class HomeController extends Controller
 
                 $cart->quantity=$request->quantity;
                 $cart->save();
-                return redirect()->back()->with('message', 'Product Added Successfully');;
+                Alert::success('Product Added successfully', 'We have added product to the cart');
+                return redirect()->back();
+                // return redirect()->back()->with('message', 'Product Added Successfully');
             }
 
 

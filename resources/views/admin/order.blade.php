@@ -91,7 +91,7 @@
                         <div class="mb-3">
                           <form action="{{url('search')}}" method="GET">
                             @csrf
-                            <input type="text" name="search" placeholder="search here">
+                            <input type="text" name="search" placeholder="search here" class="">
                             <button type="search" class="btn btn-primary bg-primary">Search</button>
                           </form>
                         </div>

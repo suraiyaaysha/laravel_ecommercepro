@@ -20,7 +20,7 @@
                </div>
             </div>
 
-            <div class="row mb-4 mt-4 justify-content-center">
+            {{-- <div class="row mb-4 mt-4 justify-content-center">
                <div class="col-sm-6 col-md-4 col-lg-4">                 
                   @if (session()->has('message'))
                   <div class="alert alert-success">
@@ -29,7 +29,7 @@
                   </div> 
                   @endif
                </div>
-            </div>
+            </div> --}}
 
             <div class="row">
 
